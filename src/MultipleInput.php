@@ -159,8 +159,8 @@ class MultipleInput extends InputWidget
                 ? ArrayHelper::getValue($this->model, $this->attribute, [])
                 : [];
 
-            foreach ((array) $data as $index => $value) {
-                $this->data[$index] = $value;
+            foreach ((array) $data as $value) {
+                $this->data[] = $value;
             }
         }
     }
